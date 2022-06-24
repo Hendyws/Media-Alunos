@@ -5,7 +5,6 @@ let btnCalc = document.querySelector('.calc');
 let btnReset = document.querySelector('.reset');
 let btnNext = document.querySelector('.next-nota');
 let result = document.querySelector('.result');
-
 let currentNota = document.querySelector('.current-nota-info');
 let nextNota = 1;
 let notas = [];
