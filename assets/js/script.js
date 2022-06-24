@@ -17,10 +17,11 @@ btnNext.addEventListener('click', ()=>{
   nota = parseInt(document.querySelector('#nota').value);
   if(nota>=0&&nota<=10) {
     nextNota++;
-    currentNota.innerHTML = `<strong>Nota - ${nextNota} -</strong>`;
+    currentNota.innerHTML = `<strong>NOTA - ${nextNota} -</strong>`;
     if(nextNota>4){
       currentNota.innerHTML = `<strong>Calcule a MÉDIA DO ALUNO</strong>`;
       btnNext.style.display = 'none';
+      btnCalc.style.display = 'block';
       document.querySelector('#nota').style.display = 'none';
     }
     document.querySelector('#nota').focus();
@@ -60,7 +61,7 @@ btnCalc.addEventListener('click', ()=>{
       `;
     result.innerText = `Aluno ficou REPROVADO com a MÉDIA = ${media.toFixed(1)}`;
   }
-  console.log(media);
+  btnCalc.style.display = 'none';
 });
 btnReset.addEventListener('click', ()=>{
   nota = 0;
@@ -69,7 +70,7 @@ btnReset.addEventListener('click', ()=>{
   result.style.display = 'none';
   btnNext.style.display = 'block';
   document.querySelector('#nota').style.display = 'block';
-  currentNota.innerHTML = `<strong>Nota - ${nextNota} -</strong>`;
+  currentNota.innerHTML = `<strong>NOTA - ${nextNota} -</strong>`;
 })
 
 // FUNCTIONS

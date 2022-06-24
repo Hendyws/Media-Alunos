@@ -7,26 +7,69 @@
   <style>
     *{
       margin: 0;
-      padding: 10px;
+      padding: 0;
       box-sizing: border-box;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
-      label{
-        display: block;
-      }
-      button{
-        display: block;
-        margin-bottom: 10px;
-      }
-      .result{
-        display: none;
-        height: 40px;
-        width: 400px;
-        background-color: #ffffff;
-        border-radius: 5px;
-        text-align: center;
-        font-weight: bold;
-      }
+    }
+    body{
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main,
+    .container-enter{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    label{
+      display: block;
+      text-align: center;
+    }
+    h2{
+      text-align: center;
+    }
+    input{
+      height: 40px;
+      width: 150px;
+      padding: 0 10px;
+      text-align: center;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+    button{
+      display: block;
+      background-color: black;
+      height: 30px;
+      width: 150px;
+      color: white;
+      font-weight: bold;
+      outline: none;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    .calc{
+      display: none;
+    }
+    .result{
+      display: none;
+      line-height: 40px;
+      height: 40px;
+      width: 400px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 200px;
+    }
+    .info{
+      margin-bottom: 30px;
+    }
   </style>
   <title>Média Alunos</title>
 </head>
@@ -35,15 +78,13 @@
     <div class="container-enter">
       <h2>MÉDIA DE ALUNO</h2>
       <label for="nota">
-        <span class="current-nota-info"><strong>Nota - 1 -</strong></span><br><br>
+        <span class="current-nota-info"><strong>NOTA - 1 -</strong></span><br><br>
         <input type="text" name="nota" id="nota">
       </label><br>
+      <div class="info"></div>
       <button class="next-nota">PRÓXIMA NOTA</button>
       <button class="calc">CALCULAR</button>
       <button class="reset">RESET</button>
-    </div>
-    <div class="info">
-
     </div>
     <footer>
       <div class="result">
