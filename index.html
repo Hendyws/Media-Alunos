@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      label{
+        display: block;
+      }
+      button{
+        display: block;
+        margin-bottom: 10px;
+      }
+      .result{
+        display: none;
+        height: 40px;
+        width: 400px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+      }
+  </style>
+  <title>Média Alunos</title>
+</head>
+<body>
+  <div class="main">
+    <div class="container-enter">
+      <h2>MÉDIA DE ALUNO</h2>
+      <label for="nota">
+        <span class="current-nota-info"><strong>Nota - 1 -</strong></span><br><br>
+        <input type="text" name="nota" id="nota">
+      </label><br>
+      <button class="next-nota">PRÓXIMA NOTA</button>
+      <button class="calc">CALCULAR</button>
+      <button class="reset">RESET</button>
+    </div>
+    <div class="info">
+
+    </div>
+    <footer>
+      <div class="result">
+        
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
